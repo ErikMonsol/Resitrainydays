@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shopingcart.css">
+</head>
+
+<body>
+    <header>
+        <a class="logoanc" href="index.html"><img class="logo white-image" src="RainyDaysLogo.png"></a>
+        <div class="flex-left">
+            <nav>
+                <ul>
+                    <li><a class="aboutlink" href="about.html">About</a></li>
+                    <li><a class="contactlink" href="contact.html">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex-right">
+            <button class="viewshop"><a class="linkshop" href="viewshop.html">View the shop </a></button>
+            <div class="arrowup">
+                <img src="arrow-up-right.svg">
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <section class="infoaddress box1">
+            <h1 class="myadtitle">My Address</h1>
+            <form id="addressForm">
+                <div class="input-group">
+                    <div class="input-row">
+                        <div class="textinfo">
+                            <p class="fila">First Name:</p>
+                            <input class="infila" type="text" name="firstName" required>
+                        </div>
+                        <div class="textinfo">
+                            <p class="fila">Last Name:</p>
+                            <input class="infila" type="text" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="">
+                            <p class="ad">Street Address:</p>
+                            <input class="stinp" type="text" name="streetAddress" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="zca">
+                            <p class="ca">Apt:</p>
+                            <input class="downin" type="text" name="apt">
+                        </div>
+                        <div class="zca">
+                            <p class="ca">County:</p>
+                            <input class="downin" type="text" name="county">
+                        </div>
+                        <div class="textinfo zca">
+                            <p class="ca">Zip:</p>
+                            <input class="downin" type="text" name="zip" required>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="infoaddress box2">
+            <h1 class="myadtitle">Order Summary</h1>
+            <section class="line">
+                <div class="price-row">
+                    <p>Items (2):</p>
+                    <p class="pricenum">$30.00</p>
+                </div>
+                <div class="price-row">
+                    <p>Shipping & handling:</p>
+                    <p class="pricenum">$5.00</p>
+                </div>
+                <div class="price-row">
+                    <p>Before tax:</p>
+                    <p class="pricenum">$15.00</p>
+                </div>
+                <div class="price-row">
+                    <p>Tax collected:</p>
+                    <p class="pricenum">$2.50</p>
+                </div>
+                <hr class="line">
+                <div class="price-row">
+                    <p>Order Total:</p>
+                    <p class="pricenum">$42.5</p>
+                </div>
+
+                <button class="placeord"><a id="placeOrderBtn" href="checkoutsuc.html">Place
+                        order</a></button>
+
+            </section>
+        </section>
+
+        <section class="infoaddress box3">
+            <h1 class="myadtitle paytext">Payment Method</h1>
+            <form id="paymentForm">
+                <div class="input-group">
+                    <div class="input-container carinpcon">
+                        <span class="fontinfosize">Card number:</span>
+                        <div class="inputconcard">
+                            <input class="cardinp" name="cardNumber" required>
+                        </div>
+                    </div>
+                    <div class="input-container carinpcon">
+                        <span class="fontinfosize">Card name:</span>
+                        <div class="cardnam">
+                            <input class="cardinp" name="cardName" required>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label class="fontinfosize" for="month">Expiration Date:</label>
+                        <div class="flex-container">
+                            <select id="month" name="expirationMonth" required>
+                                <option value="" disabled selected>Month</option>
+                                <option value="01">01 - January</option>
+                                <option value="02">02 - February</option>
+                                <option value="03">03 - March</option>
+                                <option value="04">04 - April</option>
+                                <option value="05">05 - May</option>
+                                <option value="06">06 - June</option>
+                                <option value="07">07 - July</option>
+                                <option value="08">08 - August</option>
+                                <option value="09">09 - September</option>
+                                <option value="10">10 - October</option>
+                                <option value="11">11 - November</option>
+                                <option value="12">12 - December</option>
+                            </select>
+                            <select id="year" name="expirationYear" required>
+                                <option value="" disabled selected>Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-container carinpcon">
+                        <span class="fontinfosize">Security code:</span>
+                        <div class="secinpcon">
+                            <input type="password" class="secinp" name="securityCode" required>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <script>
+        var yearSelect = document.getElementById("year");
+        var currentYear = new Date().getFullYear();
+        var maxYear = 2040;
+
+        for (var year = currentYear; year <= maxYear; year++) {
+            var option = document.createElement("option");
+            option.value = year;
+            option.textContent = year;
+            yearSelect.appendChild(option);
+        }
+
+        var placeOrderBtn = document.getElementById("placeOrderBtn");
+        placeOrderBtn.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            var addressForm = document.getElementById("addressForm");
+            var paymentForm = document.getElementById("paymentForm");
+
+            if (addressForm.checkValidity() && paymentForm.checkValidity()) {
+                // Proceed with form submission
+                window.location.href = "checkoutsuc.html"; // Redirect to the success page
+            } else {
+                // Display validation error messages
+                addressForm.reportValidity();
+                paymentForm.reportValidity();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
