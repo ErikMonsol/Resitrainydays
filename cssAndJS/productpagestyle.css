@@ -1,0 +1,317 @@
+body {
+    color: black;
+}
+
+.centerbox {
+    display: flex;
+    justify-content: center;
+
+    height: 10px;
+}
+
+.product-details-box {
+    margin: 0 auto;
+    background: black;
+
+
+}
+
+.product-details {
+    max-width: 20%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    margin: 30px auto;
+    /* Give it more space from the top and bottom */
+    /* A subtle gradient */
+    border-radius: 10px;
+    /* Soft rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: black;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .product-details {
+        flex-direction: column;
+        /* Make it vertical */
+        max-width: 90%;
+        /* More width for smaller screens */
+        padding: 10px;
+        /* Less padding */
+    }
+
+    .product-image {
+        max-width: 100%;
+        /* Full width for image */
+        margin-bottom: 10px;
+        /* Add some space below the image */
+    }
+
+    .product-title,
+    .product-description,
+    .product-price {
+        text-align: center;
+        /* Centering the text for smaller screens */
+    }
+
+    .size-button {
+        padding: 6px 10px;
+        /* Slightly smaller padding for size buttons */
+    }
+}
+
+/* For tablets (medium screens) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .product-details {
+        max-width: 70%;
+        /* Give a bit more width */
+    }
+
+    .product-image {
+        max-width: 50%;
+        /* Adjust image width for medium screens */
+    }
+}
+
+/* For laptops (large screens) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .product-details {
+        max-width: 50%;
+        /* Adjust the max width */
+    }
+}
+
+/* For PCs (extra large screens) */
+@media only screen and (min-width: 1441px) {
+    /* Adjust styles here if needed for very large screens. */
+    /* The base styles will be applied by default, so typically, this is where you might increase font sizes or spacing for better legibility on large monitors. */
+}
+
+.product-image {
+    max-width: 50%;
+    height: auto;
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 2.3rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 5px;
+
+
+}
+
+.product-description {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.product-sizes,
+.product-basecolor,
+.product-favorite,
+.product-gender,
+.product-onsale,
+.product-tags {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.add-to-cart-button {
+
+    margin: 25px auto;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    /* Change from inline-block to block */
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    max-width: 200px;
+
+}
+
+
+.add-to-cart-button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+
+.size-buttons-container {
+    width: max-content;
+    /* This will give the container width based on its content, allowing for centering with margin auto */
+    margin: 0px auto;
+    /* Vertically space it with 20px and auto will center it horizontally */
+    text-align: center;
+    /* This is to handle the inline-block behavior of children, if not using flex */
+    padding: 10px;
+    margin-bottom: -15px;
+    font-size: 2rem;
+    margin-top: -6px;
+}
+
+.size-button {
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Remove margin for the last button to avoid extra spacing */
+
+
+/* Hover effect */
+.size-button:hover {
+    background-color: #555;
+    /* Slightly lighter background on hover */
+}
+
+/* Active (click) effect */
+.size-button:active {
+    background-color: #111;
+    /* Even darker background when active */
+}
+
+
+.size-buttons-container .size-button:not(:last-child) {
+    margin-right: 0px;
+
+}
+
+
+/* Flex styling to center the buttons within the rows */
+.size-row {
+    display: flex;
+    /* Makes it a flex container */
+    justify-content: center;
+    /* Centers children horizontally */
+    margin-bottom: 10px;
+
+    /* Space between the rows */
+}
+
+p.product-onsale {
+    text-align: center;
+}
+
+p.product-basecolor {
+    text-align: center;
+}
+
+.size-button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.size-button:hover {
+    background-color: #eee;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.container-popup {
+    width: 320px;
+    /* Adjusted width */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.popup-image {
+    max-width: 80%;
+    /* Making the image a bit smaller */
+    margin: 10px 0;
+    border-radius: 8px;
+    /* Rounded corners for the image */
+
+    /* Subtle shadow for depth */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #2C3E50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.close-button:hover {
+    background-color: #34495E;
+}
+
+.view-bag-button,
+.checkout-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: #fff;
+}
+
+.view-bag-button {
+    background-color: #2C3E50;
+}
+
+.view-bag-button:hover {
+    background-color: #34495E;
+}
+
+.checkout-button {
+    background-color: #7F8C8D;
+}
+
+.checkout-button:hover {
+    background-color: #95A5A6;
+}
