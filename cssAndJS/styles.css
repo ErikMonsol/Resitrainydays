@@ -211,6 +211,15 @@ body {
     margin-bottom: -20px;
 }
 
+.leafvec {
+    position: absolute;
+}
+
+.leaf {
+    position: relative;
+    z-index: 1;
+}
+
 .newsspan {
     font-size: 20px;
     margin-top: -10px;
