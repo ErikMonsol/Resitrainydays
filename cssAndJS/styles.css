@@ -13,6 +13,347 @@ body {
     color: white;
 }
 
+
+
+
+@media only screen and (max-width: 2500px) and (min-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 40%;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        justify-content: center;
+        height: 30vh;
+    }
+
+    /* Style each grid item */
+    .grid-item {
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .jacket {
+        height: 550px;
+    }
+
+
+    .grid-item:nth-child(3) {
+        margin-top: 30px;
+    }
+
+    .newstext {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 300px) {
+
+    .newstext {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .jackbox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0px -20px;
+
+    }
+
+    .jacket {
+        height: 450px;
+        margin-bottom: -85px;
+    }
+
+    .grid-item:nth-child(3) {
+        margin-top: 15px;
+    }
+
+    .grid-item:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .grid-item:nth-child(4) {
+        margin-top: 15px;
+    }
+
+
+    .grid-container {
+        display: flex;
+        border: 5px solid yellow;
+        justify-content: center;
+        width: 800px;
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+
+
+/* Adjust the widths of specific grid items */
+.grid-item:nth-child(1),
+.grid-item:nth-child(3) {
+    grid-column: span 1;
+    padding: 50px 20px;
+
+    /* Takes up one column (60%) */
+}
+
+.grid-item:nth-child(1) {
+    background: #FFFFFFF2;
+    padding: 50px 10px;
+}
+
+.grid-item:nth-child(2) {
+    padding: 20px 20px;
+    background: linear-gradient(1.66deg, #0A3641 8.7%, #06BEE1 98.41%);
+}
+
+.grid-item:nth-child(3) {
+    background: #F76C5E;
+    padding: 28px 28px;
+    margin-top: 30px;
+}
+
+.grid-item:nth-child(4) {
+    margin-top: 30px;
+    background: #FFFFFFF2;
+}
+
+
+
+.grid-item:nth-child(2),
+.grid-item:nth-child(4) {
+    grid-column: span 1;
+    /* Takes up one column (30%) */
+}
+
+.ellipsecircle {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: black;
+    margin: -5% -1%;
+    margin-bottom: 15px;
+    background: black;
+}
+
+
+.letterBox {
+    display: flex;
+    gap: 20px;
+}
+
+.adpage {
+    overflow: hidden;
+    /* Change overflow to visible */
+    position: relative;
+    /* Add relative positioning to the adpage */
+}
+
+.newstext {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 13px;
+}
+
+.jacket {
+    margin-top: -25px;
+    z-index: 0;
+    position: relative;
+}
+
+.textunder {
+    z-index: 1;
+    position: absolute;
+    font-size: 30px;
+    bottom: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    left: 50px;
+    width: 10%;
+
+}
+
+.storebox {
+
+    display: flex;
+    align-items: flex-end;
+    height: 60%;
+}
+
+.adflex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+
+
+.upnews {
+    background: #262626;
+    padding: 20px 18px;
+    border-radius: 100px;
+    font-size: 15px;
+    color: white;
+    margin-bottom: -20px;
+}
+
+.newsspan {
+    font-size: 20px;
+    margin-top: -10px;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+.imgrainman {
+    height: 100%;
+    z-index: 1;
+}
+
+.imagebox {
+    display: flex;
+
+}
+
+.blackbox {
+    border: 18px solid black;
+    height: 70%;
+
+    border-radius: 25px;
+    margin-top: 13px;
+    margin-left: -20px;
+}
+
+
+.box1 {}
+
+.textinfo {
+    display: flex;
+
+    width: %;
+    /* Set the width of .textinfo to 100% */
+}
+
+.infobox {
+    width: 200px;
+    height: 200px;
+
+}
+
+.adresinfo {
+    text-align: center;
+}
+
+.textalign {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-size: 25px;
+    height: 80%;
+
+}
+
+.concerninfo {
+    border: 1px solid black;
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.suptext {
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+
+.concon {
+    color: #000000;
+    font-size: 25px;
+
+}
+
+.adresinfo {
+    font-size: 15px;
+    color: black;
+    text-align: right;
+}
+
+.textadhelp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapad {
+    text-align: right;
+    display: flex;
+    gap: 10px;
+}
+
+.rattext {
+    color: black;
+    font-size: 47px;
+    font-style: "Work Sans";
+}
+
+.ratcon {
+    display: flex;
+}
+
+.infrat {
+    font-size: 15px;
+    color: #000000;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.butinfo {
+    height: 135px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    gap: 10px;
+}
+
+.butinfo,
+button {
+    padding: 13px 25px;
+    border-radius: 100px;
+    font-size: 20px;
+
+}
+
 .linkshop {
     text-decoration: none;
     color: white;
@@ -147,7 +488,7 @@ body {
 @media only screen and (max-width: 1000px) and (min-width: 200px) {
     .logo {
         height: 55%;
-        max-width: 30%;
+        max-width: 90px;
         margin-top: 2%;
         padding: 20px;
         transform: translateX(4%);
@@ -193,6 +534,11 @@ body {
     ul {
         display: flex;
         gap: 10%;
+        margin-left: 100px;
+    }
+
+    nav {
+        margin-left: 130px;
     }
 
     .flex-right {
@@ -463,9 +809,10 @@ body {
 }
 
 .box {
-    width: 200px;
+    max-width: 680px;
+    display: flex;
     height: 200px;
-    border: 1px solid white;
+
     position: relative;
 }
 
