@@ -85,10 +85,26 @@ body {
     .box {
         height: 200px;
     }
+
+    .suptext {
+        font-size: 15px;
+
+    }
+
+    .textinfo {
+        font-size: 25px;
+        height: 80%;
+    }
+
 }
 
 
 @media only screen and (max-width: 1000px) and (min-width: 300px) {
+
+    .suptext {
+        font-size: 10px;
+
+    }
 
     .newstext {
         font-size: 32px;
@@ -159,7 +175,7 @@ body {
     }
 
     .blackbox {
-        height: 25%;
+        height: 22%;
         margin-top: 2px;
     }
 
@@ -170,6 +186,12 @@ body {
     .box {
         height: 20vh;
     }
+
+    .textinfo {
+        font-size: 20px;
+        height: 40%;
+    }
+
 
 }
 
@@ -320,14 +342,6 @@ body {
     margin-left: -20px;
 }
 
-
-.textinfo {
-    display: flex;
-
-    width: %;
-    /* Set the width of .textinfo to 100% */
-}
-
 .infobox {
     width: 200px;
     height: 200px;
@@ -350,10 +364,6 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
-    font-size: 25px;
-    height: 80%;
-
 }
 
 .concerninfo {
@@ -364,11 +374,7 @@ body {
     gap: 10px;
 }
 
-.suptext {
-    font-size: 15px;
-    margin-left: 10px;
 
-}
 
 .concon {
     color: #000000;
