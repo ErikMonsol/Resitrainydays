@@ -153,7 +153,7 @@ body {
 
     .viewshop {
         padding: 10px 40px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .linkshop {
@@ -303,6 +303,38 @@ body {
 
     .linkshop {
         font-size: 1rem;
+    }
+
+    .header {
+        justify-content: flex-end;
+    }
+
+    .white-image {
+        margin-left: -7px;
+    }
+
+    .flex-left {
+        display: flex;
+        width: 40%;
+        margin-left: 4%;
+        font-family: 'Work Sans', sans-serif;
+        align-items: center;
+        margin-top: 1%;
+        margin-left: -5%;
+    }
+
+    ul {
+        display: flex;
+        gap: 10%;
+        margin-left: 10px;
+    }
+
+    .contactlink {
+        font-size: 1.5rem;
+    }
+
+    .aboutlink {
+        font-size: 1.5rem;
     }
 }
 
@@ -546,14 +578,10 @@ button {
     }
 
     .aboutlink {
-        text-decoration: none;
-        color: white;
         font-size: 2.5rem;
     }
 
     .contactlink {
-        text-decoration: none;
-        color: white;
         font-size: 2.5rem;
     }
 
@@ -592,8 +620,6 @@ button {
         font-family: 'Work Sans', sans-serif;
         align-items: center;
         margin-top: 1%;
-
-
     }
 
     li {
@@ -659,7 +685,6 @@ button {
         max-width: 90px;
         margin-top: 2%;
         padding: 20px;
-        transform: translateX(29%);
         margin-left: 20px;
     }
 
@@ -684,15 +709,7 @@ header {
     justify-content: center;
 }
 
-.flex-left {
-    display: flex;
-    width: 60%;
-    margin-left: 1%;
-    font-family: 'Work Sans', sans-serif;
-    align-items: center;
-    margin-top: 1%;
 
-}
 
 li {
     list-style: none;
@@ -701,10 +718,7 @@ li {
     margin-top: -1%;
 }
 
-ul {
-    display: flex;
-    gap: 10%;
-}
+
 
 
 
@@ -763,13 +777,11 @@ ul {
 .aboutlink {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
 }
 
 .contactlink {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
 }
 
 .spanadtxt {
@@ -778,7 +790,6 @@ ul {
     margin-top: 20px;
 }
 
-}
 
 
 
