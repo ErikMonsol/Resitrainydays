@@ -119,6 +119,14 @@ body {
         justify-content: flex-end;
         gap: 10px;
     }
+
+    .grid-item:nth-child(1) {
+        padding: 50px 10px;
+    }
+
+
+
+
 }
 
 
@@ -233,6 +241,14 @@ body {
         margin-bottom: 10px;
     }
 
+    .grid-item:nth-child(1) {}
+
+    .upnews {
+        padding: 13px 18px;
+        border-radius: 100px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -250,7 +266,7 @@ body {
 
 .grid-item:nth-child(1) {
     background: #FFFFFFF2;
-    padding: 50px 10px;
+
 }
 
 .grid-item:nth-child(2) {
@@ -341,11 +357,8 @@ body {
 
 .upnews {
     background: #262626;
-    padding: 20px 18px;
     border-radius: 100px;
-    font-size: 15px;
     color: white;
-    margin-bottom: -20px;
 }
 
 .leafvec {
@@ -729,6 +742,11 @@ button {
         text-decoration: none;
         color: white;
         font-size: 2rem;
+    }
+
+    .spanadtxt {
+        display: flex;
+        align-items: center;
     }
 
 }
