@@ -110,6 +110,15 @@ body {
     .butinfo {
         height: 135px;
     }
+
+    .butinfo {
+        height: 135px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px;
+    }
 }
 
 
@@ -213,14 +222,16 @@ body {
 
     .butinfo,
     button {
-        padding: 4px 25px;
+        padding: 4px 18px;
         font-size: 20px;
     }
 
     .butinfo {
         height: 95px;
+        padding: 4px 8px;
+        height: 102px;
+        margin-bottom: 10px;
     }
-
 
 }
 
@@ -447,7 +458,6 @@ body {
 }
 
 .butinfo {
-    height: 135px;
     display: flex;
     align-items: center;
     flex-direction: column;
