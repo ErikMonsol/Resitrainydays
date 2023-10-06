@@ -108,9 +108,8 @@ body {
     }
 
     .textunder {
-
-        border: 1px solid black;
         font-size: 20px;
+        top: 80px;
 
     }
 
@@ -203,7 +202,7 @@ body {
 .textunder {
     z-index: 1;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     font-family: 'Work Sans', sans-serif;
 
     left: 50px;
