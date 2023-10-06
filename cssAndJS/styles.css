@@ -77,6 +77,14 @@ body {
         height: 70%;
         margin-top: 13px;
     }
+
+    .concon {
+        font-size: 25px;
+    }
+
+    .box {
+        height: 200px;
+    }
 }
 
 
@@ -151,11 +159,22 @@ body {
     }
 
     .blackbox {
-        height: 30%;
+        height: 25%;
         margin-top: 2px;
     }
 
+    .concon {
+        font-size: 20px;
+    }
+
+    .box {
+
+        height: 15vh;
+    }
+
 }
+
+
 
 
 
@@ -303,8 +322,6 @@ body {
 }
 
 
-.box1 {}
-
 .textinfo {
     display: flex;
 
@@ -356,7 +373,6 @@ body {
 
 .concon {
     color: #000000;
-    font-size: 25px;
 
 }
 
@@ -424,6 +440,11 @@ button {
     font-size: 1.5rem;
 }
 
+.box {
+    max-width: 680px;
+    display: flex;
+    position: relative;
+}
 
 
 @media only screen and (max-width: 2000px) and (min-width: 1000px) {
@@ -731,137 +752,6 @@ button {
     margin-left: -13%;
 }
 
-
-
-
-
-
-
-@media only screen and (max-width: 2000px) and (min-width: 1700px) {
-    .infobox {
-        margin-top: 5%;
-    }
-
-    .midtext,
-    .midtextblock {
-        font-size: 6rem;
-    }
-}
-
-@media only screen and (max-width: 1700px) and (min-width: 1560px) {
-    .infobox {
-        margin-top: 8%;
-    }
-
-    .midtext,
-    .midtextblock {
-        font-size: 5.5rem;
-    }
-}
-
-@media only screen and (max-width: 1560px) and (min-width: 1300px) {
-    .infobox {
-        margin-top: 0%;
-    }
-
-    .midtext,
-    .midtextblock {
-        font-size: 4rem;
-    }
-}
-
-@media only screen and (max-width: 1300px) and (min-width: 1000px) {
-    .infobox {
-        margin-top: 5%;
-    }
-
-    .midtext,
-    .midtextblock {
-        font-size: 3rem;
-    }
-}
-
-.infobox {
-    display: flex;
-    align-items: center;
-    margin-left: -13%;
-}
-
-.upnews {
-    background: #262626;
-    padding: 20px 18px;
-    border-radius: 100px;
-    font-size: 15px;
-    color: white;
-}
-
-.manyellipse {
-    margin-left: 18px;
-}
-
-.limoffer,
-.spanblock {
-    font-size: 15px;
-    font-family: 'Work Sans', sans-serif;
-    color: #000000;
-}
-
-.limoffer {
-    margin-left: 18px;
-}
-
-.spanblock {
-    display: block;
-    text-align: left;
-}
-
-
-
-@media only screen and (max-width: 2000px) and (min-width: 1600px) {
-    .WeatherJacket {
-        margin-left: 26%;
-    }
-
-    .text {
-        padding: 30px 40px;
-        font-size: 5rem;
-    }
-
-    .vector {
-        padding: 20px 30px;
-    }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 1400px) {
-    .WeatherJacket {
-        margin-left: 10%;
-    }
-
-    .text {
-        padding: 30px 40px;
-        font-size: 4rem;
-    }
-
-    .vector {
-        padding: 20px 30px;
-    }
-}
-
-@media only screen and (max-width: 1400px) and (min-width: 1200px) {
-    .WeatherJacket {
-        margin-left: 10%;
-    }
-
-    .text {
-        padding: 30px 40px;
-        font-size: 3.5rem;
-    }
-
-    .vector {
-        padding: 20px 30px;
-    }
-}
-
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
     .WeatherJacket {
         margin-left: -1%;
@@ -870,14 +760,6 @@ button {
     .text {
         font-size: 3rem;
     }
-}
-
-.box {
-    max-width: 680px;
-    display: flex;
-    height: 200px;
-
-    position: relative;
 }
 
 .vector {
@@ -971,98 +853,6 @@ button {
 
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 200px) {
-    .boxbottomrow {
-        margin: 0 auto;
-        gap: 10px;
-
-    }
-
-    .vector {
-        position: absolute;
-        top: 63%;
-        left: 10%;
-
-        padding: 20px 30px;
-    }
-
-    .WeatherJacket {
-        margin-left: 32%;
-    }
-
-    .supportbox {
-        background: #F76C5E;
-        margin: 0 auto;
-        height: 30vh;
-        width: 85%;
-        border-radius: 25px;
-    }
-
-    .containerofinformation {
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        top: 95%;
-        width: 80%;
-        height: 20%;
-        margin-top: 3%;
-
-    }
-
-    .raincoat-box {
-        margin: 45px 50px;
-    }
-
-    .raincoat {
-        height: 20vh;
-        border: none;
-        margin-top: 30%;
-    }
-
-    .reviewbox {
-        background: #FFFFFFF2;
-        height: 30vh;
-        width: 85%;
-        margin: 0 auto;
-        border-radius: 25px;
-        margin-top: 5%;
-    }
-
-    .buttontop {
-        position: absolute;
-        gap: 10%;
-        left: 5%;
-        margin-top: -10%;
-        margin-left: 7%;
-        display: flex;
-        gap: 5px;
-
-    }
-
-    .buttonbottom {
-        left: 10%;
-        margin-left: 5%;
-        bottom: 1%;
-        transform: translateY(-30%);
-        margin-top: 25%;
-        display: flex;
-        gap: 5px;
-
-
-    }
-
-    .buttonsize {
-        padding: 13px 40px;
-        border: 1px solid #000000;
-        border-radius: 100px;
-        font-size: 2rem;
-    }
-
-
-}
-
 
 
 
@@ -1101,32 +891,6 @@ button {
 }
 
 
-.contactconcernbox {
-    position: absolute;
-    bottom: 0;
-    height: 40%;
-
-}
-
-.anyconcerns {
-    text-align: center;
-    color: black;
-    margin-left: -4%;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.textbesideimage {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.adresscircle {
-    display: flex;
-}
-
 .circle {
     width: 5vh;
     height: 5vh;
@@ -1135,86 +899,4 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media only screen and (max-width: 2000px) and (min-width: 1400px) {
-    .textbesideimage {
-        font-size: 3rem;
-    }
-
-    .anyconcerns {
-        font-size: 2.5rem;
-    }
-
-    .adressinfo {
-        font-size: 3rem;
-    }
-
-    .supportall {
-        font-size: 1.5rem;
-        width: 25%;
-    }
-
-    .contactconcernbox {
-        width: 100%;
-    }
-}
-
-
-@media only screen and (max-width: 1400px) and (min-width: 1000px) {
-    .textbesideimage {
-        font-size: 3rem;
-    }
-
-    .anyconcerns {
-        font-size: 2.5rem;
-    }
-
-    .adressinfo {
-        font-size: 2.5rem;
-    }
-
-    .supportall {
-        font-size: 1.5rem;
-        width: 20%;
-    }
-
-    .contactconcernbox {
-        width: 120%;
-    }
-}
-
-
-
-
-
-
-.price-container {
-    display: flex;
-    align-items: center;
-    color: black;
-    padding-left: 3%;
-}
-
-.price {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 5rem;
-}
-
-.starinfo {
-    margin-left: 2%;
-}
-
-.icon {
-    margin-bottom: 10px;
-    margin-bottom: -1%;
-
-}
-
-.description {
-    font-size: 1.2rem;
-    display: block;
-    font-size: 2rem;
 }
