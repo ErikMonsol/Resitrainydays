@@ -37,6 +37,8 @@ body {
 
 
 
+
+
     /* Style each grid item */
     .grid-item {
         padding: 20px;
@@ -141,9 +143,6 @@ body {
         font-size: 20px;
     }
 
-
-
-
     .textalign {
         display: flex;
         justify-content: center;
@@ -152,6 +151,14 @@ body {
     }
 
 
+    .viewshop {
+        padding: 10px 40px;
+        font-size: 2rem;
+    }
+
+    .linkshop {
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -288,17 +295,26 @@ body {
         font-size: 15px;
     }
 
+    .viewshop {
+        padding: 5px 3px;
+        font-size: 1.5rem;
+        width: 80px;
+    }
+
+    .linkshop {
+        font-size: 1rem;
+    }
+}
 
 
-
-
+.viewshop {
+    background: #262626;
+    border: none;
+    color: white;
 }
 
 
 
-
-
-/* Adjust the widths of specific grid items */
 .grid-item:nth-child(1),
 .grid-item:nth-child(3) {
     grid-column: span 1;
@@ -520,10 +536,7 @@ button {
 .linkshop {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
 }
-
-
 
 @media only screen and (max-width: 2000px) and (min-width: 1000px) {
     .boxtoprow {
@@ -606,14 +619,6 @@ button {
 
     }
 
-    .viewshop {
-        padding: 10px 40px;
-        border-radius: 100px;
-        font-size: 2rem;
-        background: #262626;
-        border: none;
-        color: white;
-    }
 
     .arrowup {
         width: 5vh;
@@ -714,15 +719,6 @@ ul {
 
 }
 
-.viewshop {
-    padding: 5px 30px;
-    border-radius: 100px;
-    font-size: 1.5rem;
-    background: #262626;
-    border: none;
-    color: white;
-    width: 160px;
-}
 
 .arrowup {
     width: 3vh;
@@ -735,7 +731,7 @@ ul {
 }
 
 .arrow {
-    width: 80%;
+    width: 60%;
 }
 
 
