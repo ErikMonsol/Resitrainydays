@@ -96,6 +96,10 @@ body {
         height: 80%;
     }
 
+    .adresinfo {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -184,12 +188,17 @@ body {
     }
 
     .box {
-        height: 20vh;
+        height: 14vh;
     }
 
     .textinfo {
         font-size: 20px;
         height: 40%;
+    }
+
+    .adresinfo {
+        font-size: 10px;
+        margin-top: 20px;
     }
 
 
@@ -348,9 +357,6 @@ body {
 
 }
 
-.adresinfo {
-    text-align: center;
-}
 
 .textalign {
     display: flex;
@@ -382,7 +388,6 @@ body {
 }
 
 .adresinfo {
-    font-size: 15px;
     color: black;
     text-align: right;
 }
@@ -890,11 +895,6 @@ button {
     color: black;
 
 }
-
-.adressinfo {
-    color: black;
-}
-
 
 .circle {
     width: 5vh;
