@@ -218,6 +218,8 @@ body {
 
     .box {
         height: 20vh;
+        margin-bottom: -20px;
+        margin-top: -20px;
     }
 
     .textinfo {
