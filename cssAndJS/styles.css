@@ -11,8 +11,17 @@
 body {
     background: black;
     color: white;
+    margin: 0;
+    height: 100%;
+    overflow: hidden
 }
 
+
+.box {
+    max-width: 680px;
+    display: flex;
+    position: relative;
+}
 
 
 
@@ -25,6 +34,8 @@ body {
         justify-content: center;
         height: 30vh;
     }
+
+
 
     /* Style each grid item */
     .grid-item {
@@ -133,8 +144,17 @@ body {
 
 
 
+    .textalign {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
 
 }
+
 
 
 @media only screen and (max-width: 1000px) and (min-width: 300px) {
@@ -180,7 +200,7 @@ body {
 
     .grid-container {
         display: flex;
-        border: 5px solid yellow;
+
         justify-content: center;
         width: 100%;
         flex-direction: column;
@@ -401,13 +421,11 @@ body {
 
 
 .imgrainman {
-
     z-index: 1;
 }
 
 .imagebox {
     display: flex;
-
 }
 
 .blackbox {
@@ -423,11 +441,7 @@ body {
 }
 
 
-.textalign {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 .textinfo {
     display: flex;
@@ -509,11 +523,6 @@ button {
     font-size: 1.5rem;
 }
 
-.box {
-    max-width: 680px;
-    display: flex;
-    position: relative;
-}
 
 
 @media only screen and (max-width: 2000px) and (min-width: 1000px) {
