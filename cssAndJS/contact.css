@@ -46,6 +46,7 @@
 
     .center {
         display: flex;
+        justify-content: center;
     }
 
     .adinfo {
