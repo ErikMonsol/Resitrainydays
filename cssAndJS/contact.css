@@ -29,6 +29,10 @@
     .inpwid {
         font-size: 15px;
     }
+
+    .inpboxflex {
+        gap: 20px;
+    }
 }
 
 
@@ -50,16 +54,21 @@
 
     .box1 {
         justify-content: flex-start;
-        width: 50%;
+        width: 80%;
     }
 
     .box2 {
         width: 80.2%;
         padding: 20px 24px;
+
     }
 
     .inpwid {
         font-size: 9px;
+    }
+
+    .inpboxflex {
+        flex-direction: column;
     }
 }
 
@@ -161,11 +170,6 @@
     margin-top: 10px;
 }
 
-.phonetxt {
-    margin-;
-}
-
-
 .inpfstnm,
 .inplstnm,
 .inpmail {
@@ -204,7 +208,6 @@
 .inpboxflex {
     display: flex;
     justify-content: center;
-    gap: 20px;
 }
 
 .subbut {
