@@ -33,6 +33,19 @@
     .inpboxflex {
         gap: 20px;
     }
+
+    .inpwidmail {
+        font-size: 15px;
+    }
+
+    .textarea-custom {
+        font-size: 15px;
+    }
+
+    .gittxt {
+        width: 30%;
+        font-size: 3.5rem;
+    }
 }
 
 
@@ -59,17 +72,24 @@
     }
 
     .box2 {
-        width: 80.2%;
+        margin-top: 13px;
         padding: 20px 24px;
 
     }
 
-    .inpwid {
-        font-size: 9px;
+    .inpwid,
+    .inpwidmail,
+    .textarea-custom {
+        font-size: 13px;
     }
 
     .inpboxflex {
         flex-direction: column;
+    }
+
+    .gittxt {
+        width: 50%;
+        font-size: 3rem;
     }
 }
 
@@ -78,9 +98,7 @@
 }
 
 .gittxt {
-    width: 30%;
     margin-bottom: 10px;
-    font-size: 3.5rem;
 }
 
 .contxt {
@@ -221,12 +239,10 @@
 
 .inpwid {
     padding: 10px 20px;
-
 }
 
 .inpwidmail {
     padding: 10px 20px;
-    font-size: 15px;
 }
 
 .inpwidquest {
@@ -234,7 +250,6 @@
     font-size: 15px;
     max-width: 1000px;
 }
-
 
 .textarea-custom {
     font-size: 15px;
