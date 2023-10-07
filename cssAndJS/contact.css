@@ -19,6 +19,15 @@
 
     .box1 {
         width: 30%;
+        justify-content: center;
+    }
+
+    .box2 {
+        padding: 20px 10px;
+    }
+
+    .inpwid {
+        font-size: 15px;
     }
 }
 
@@ -27,8 +36,8 @@
 
     .flexbox {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     .center {
@@ -40,7 +49,17 @@
     }
 
     .box1 {
+        justify-content: flex-start;
         width: 50%;
+    }
+
+    .box2 {
+        width: 80.2%;
+        padding: 20px 24px;
+    }
+
+    .inpwid {
+        font-size: 9px;
     }
 }
 
@@ -122,12 +141,10 @@
     height: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
 
 .box2 {
-    padding: 20px 10px;
+
     background: white;
 }
 
@@ -200,7 +217,7 @@
 
 .inpwid {
     padding: 10px 20px;
-    font-size: 15px;
+
 }
 
 .inpwidmail {
