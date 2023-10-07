@@ -46,6 +46,10 @@
         width: 30%;
         font-size: 3.5rem;
     }
+
+    .box1 {
+        height: 20vh;
+    }
 }
 
 
@@ -90,6 +94,10 @@
     .gittxt {
         width: 50%;
         font-size: 3rem;
+    }
+
+    .box1 {
+        margin-bottom: 8px;
     }
 }
 
@@ -166,7 +174,7 @@
 }
 
 .box1 {
-    height: 20vh;
+
     display: flex;
     flex-direction: column;
 }
