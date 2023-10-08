@@ -26,6 +26,12 @@
         width: 50%;
     }
 
+    input.adinp {
+        width: 98%;
+        padding: 15px 5px;
+        margin-bottom: 13px;
+    }
+
 
 }
 
@@ -58,6 +64,13 @@
     .infocon {
         width: 80%;
     }
+
+    input.adinp {
+        width: 98%;
+        padding: 15px 5px;
+        margin-bottom: 13px;
+    }
+
 
 
 }
@@ -119,5 +132,10 @@ input.inpfnwidth,
 .pricetotal {
     font-size: 2rem;
     margin-bottom: 10px;
-    margin-left: 10px;
+    text-align: center;
+}
+
+.tottxt {
+    text-align: center;
+    margin-top: 10px;
 }
