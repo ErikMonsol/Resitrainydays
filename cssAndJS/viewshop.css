@@ -4,11 +4,13 @@
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
+
 }
 
 /* Base styles - Mobile First */
 .rainy-day-container {
     width: 90%;
+    text-decoration: none;
     height: 200px;
     /* Full width on mobile, with some margins */
 
@@ -28,6 +30,19 @@
 
 }
 
+
+@media (min-width: 200px) {
+
+    .rainy-day-description {
+        font-size: 1.4rem;
+    }
+
+    .rainy-day-title {
+        font-size: 1.8rem;
+    }
+
+}
+
 /* Tablet - Landscape */
 @media (min-width: 600px) {
     .rainy-day-container {
@@ -38,6 +53,16 @@
         max-width: calc(50% - 20px);
         /* 2 items per row on tablet */
     }
+
+    .rainy-day-description {
+        font-size: 1.4rem;
+    }
+
+    .rainy-day-title {
+        font-size: 1.8rem;
+    }
+
+
 }
 
 /* Laptop */
@@ -47,6 +72,15 @@
         /* 3 items per row on laptops */
         max-width: calc(33.33% - 20px);
         /* 3 items per row on laptops */
+        height: 205px;
+    }
+
+    .rainy-day-description {
+        font-size: 1.4rem;
+    }
+
+    .rainy-day-title {
+        font-size: 1.8rem;
     }
 }
 
@@ -56,8 +90,17 @@
         flex-basis: calc(25% - 20px);
         /* 4 items per row on desktop as per your original design */
         max-width: calc(25% - 20px);
-        height: 180px;
+        height: 250px;
     }
+
+    .rainy-day-description {
+        font-size: 1.8rem;
+    }
+
+    .rainy-day-title {
+        font-size: 2.2rem;
+    }
+
 }
 
 
@@ -70,7 +113,7 @@
 .rainy-day-title {
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 1.3rem;
+
     margin-top: 10px;
 }
 
@@ -99,14 +142,4 @@
     /* Adjust the width for smaller images */
     height: auto;
     margin-top: 10px;
-}
-
-
-.rainy-day-description {
-
-    font-size: 1rem;
-
-    /* avoid stretching text to the full width of the container */
-    text-align: center;
-    /* centers the text */
 }
