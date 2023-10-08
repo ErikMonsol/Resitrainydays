@@ -342,7 +342,7 @@ body {
 
     .contactlink,
     .aboutlink {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .flex-right {
@@ -623,6 +623,7 @@ button {
 
     header {
         display: flex;
+        justify-content: flex-end;
     }
 
     .flex-left {
