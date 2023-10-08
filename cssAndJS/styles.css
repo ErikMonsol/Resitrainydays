@@ -305,9 +305,11 @@ body {
         font-size: 1rem;
     }
 
-    .header {
-        justify-content: flex-end;
+    header {
+        gap: 15px
     }
+
+
 
     .white-image {
         margin-left: -7px;
@@ -320,19 +322,21 @@ body {
         font-family: 'Work Sans', sans-serif;
         align-items: center;
         margin-top: 1%;
-        margin-left: -5%;
+        margin-left: -20px;
     }
 
     ul {
         display: flex;
         gap: 10%;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     .contactlink,
     .aboutlink {
         font-size: 1rem;
     }
+
+
 
 
 }
@@ -682,7 +686,7 @@ button {
         max-width: 90px;
         margin-top: 2%;
         padding: 20px;
-        margin-left: 5px;
+        margin-left: -8px;
     }
 
 }
