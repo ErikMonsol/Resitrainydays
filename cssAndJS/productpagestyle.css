@@ -282,6 +282,7 @@ p.product-basecolor {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    padding: 6px 5px;
 }
 
 .close-button:hover {
@@ -314,4 +315,14 @@ p.product-basecolor {
 
 .checkout-button:hover {
     background-color: #95A5A6;
+}
+
+.container-popup,
+p {
+    font-size: 2rem;
+}
+
+.container-popup,
+h2 {
+    font-size: 1.9rem;
 }
