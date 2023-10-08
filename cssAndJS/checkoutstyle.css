@@ -22,6 +22,10 @@
         font-size: 2rem;
     }
 
+    .infocon {
+        width: 50%;
+    }
+
 
 }
 
@@ -30,6 +34,7 @@
 @media only screen and (max-width: 1000px) and (min-width: 300px) {
     .infoandpaycon {
         flex-direction: column;
+        align-items: center;
     }
 
 
@@ -50,6 +55,10 @@
         font-size: 1rem;
     }
 
+    .infocon {
+        width: 80%;
+    }
+
 
 }
 
@@ -58,8 +67,9 @@
     align-items: center;
     padding: 10px 20px;
     flex-direction: column;
-    width: 50%;
+
 }
+
 
 .adbox,
 .poscodbot,
