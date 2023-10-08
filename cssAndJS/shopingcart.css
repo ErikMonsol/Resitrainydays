@@ -6,7 +6,7 @@
 
     .cart-item-name,
     .cart-item-price {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .cart-heading {
@@ -79,6 +79,14 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .cart-item-name {
+        margin-bottom: -20px;
+    }
+
+    div {
+        margin-bottom: -20px;
+    }
 }
 
 
@@ -113,19 +121,22 @@
     min-width: 35%;
 }
 
+div {
+    font-size: 2rem;
+}
+
 .cart-item-image {
-    width: 90px;
+    width: auto;
     height: 90px;
     border-radius: 10%;
     object-fit: contain;
-    margin-right: 25px;
-
+    margin: 0 auto;
 }
 
 .cart-item-name {
     flex: 2.5;
     /* Adjusted to give more space for the name */
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     font-weight: 500;
     margin-right: 15px;
     /* New margin for better spacing between name and size/price */
