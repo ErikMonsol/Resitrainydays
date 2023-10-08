@@ -9,16 +9,56 @@
     gap: 10px;
 }
 
+@media only screen and (max-width: 2000px) and (min-width: 1000px) {
+
+
+    .ftnmbox,
+    .inpfnlntxt,
+    .inplnwidth {
+        width: 100%;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 1000px) and (min-width: 300px) {
+    .infoandpaycon {
+        flex-direction: column;
+    }
+
+
+    .inplnwidth,
+    .inpfnwidth,
+    .inpwidth {
+        padding: 10px 5px;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    input.inpfnwidth,
+    .ltnmbox {
+        width: 80%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+}
+
 .infocon {
     display: flex;
     align-items: center;
     padding: 10px 20px;
     flex-direction: column;
     width: 50%;
-}
-
-p {
-    font-size: 2rem;
 }
 
 .adbox,
@@ -44,11 +84,6 @@ input.inpfnwidth,
     width: 50%;
 }
 
-.ftnmbox,
-.inpfnlntxt,
-.inplnwidth {
-    width: 100%;
-}
 
 .paybox {
     padding: 10px 20px;
