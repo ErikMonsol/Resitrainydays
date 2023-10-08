@@ -11,7 +11,6 @@
 
 @media only screen and (max-width: 2000px) and (min-width: 1000px) {
 
-
     .ftnmbox,
     .inpfnlntxt,
     .inplnwidth {
@@ -32,6 +31,26 @@
         margin-bottom: 13px;
     }
 
+    .checkout-item-name {
+        font-size: 2rem;
+    }
+
+    .paybox {
+        width: 30%;
+    }
+
+    div {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .checkout-item {
+        margin-top: 20px;
+    }
+
+    .checkout-item-image {
+        max-width: 30%;
+    }
 
 }
 
@@ -42,7 +61,6 @@
         flex-direction: column;
         align-items: center;
     }
-
 
     .inplnwidth,
     .inpfnwidth,
@@ -70,6 +88,29 @@
         padding: 15px 5px;
         margin-bottom: 13px;
     }
+
+
+    .checkout-item-name {
+        font-size: 1.5rem;
+    }
+
+    div {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .paybox {
+        width: 50%;
+    }
+
+    .checkout-item {
+        margin-top: 15px;
+    }
+
+    .checkout-item-image {
+        max-width: 45%;
+    }
+
 
 
 
@@ -110,7 +151,6 @@ input.inpfnwidth,
 
 .paybox {
     padding: 10px 20px;
-    width: 30%;
     background: white;
     color: black;
 }
@@ -125,7 +165,7 @@ input.inpfnwidth,
 }
 
 .checkout-item-image {
-    max-width: 30%;
+
     margin-right: 10px;
 }
 
