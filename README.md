@@ -8,13 +8,13 @@ Objective: Apply your knowledge of HTML and CSS by creating a fully functional, 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+In this project, my goal is to apply everything I've learned about HTML and CSS throughout this course. I'm required to create a fully functional and responsive website based on the assignment brief I chose in Design 1.
 
-You can add some bullet points if you'd like to:
+The website must incorporate all the pages outlined in the site architecture of my chosen brief. I'll ensure that the site mimics certain JavaScript functionalities, like linking from a 'Sign in' button to a login page.
 
-- List item 1
-- List item 2
-- List item 3
+My focus will be on writing semantic and neat HTML. The CSS I use will adhere to the DRY (Don't Repeat Yourself) principle and be easy to read. I understand the importance of responsiveness and will ensure the website looks good on all screen sizes without horizontal scrollbars. I'll utilize Flexbox and CSS Grids and avoid using CSS frameworks like Bootstrap. My website will be WCAG compliant, with a strong emphasis on accessibility.
+
+Each page of my website will have a unique <meta name="description">, <title>, and <h1>. I am committed to using original code, although I may refer to external sources for specific effects, which I will include in my report.
 
 ## Built With
 - HTML
