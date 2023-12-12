@@ -1,6 +1,6 @@
 Rainydays
 
-![image](RainydaysCover.png)
+![image](https://i.imgur.com/3WH4Az5.png)
 
 A simple overview of the use/purpose of the project.
 
