@@ -14,7 +14,7 @@ The website must incorporate all the pages outlined in the site architecture of 
 
 My focus will be on writing semantic and neat HTML. The CSS I use will adhere to the DRY (Don't Repeat Yourself) principle and be easy to read. I understand the importance of responsiveness and will ensure the website looks good on all screen sizes without horizontal scrollbars. I'll utilize Flexbox and CSS Grids and avoid using CSS frameworks like Bootstrap. My website will be WCAG compliant, with a strong emphasis on accessibility.
 
-Each page of my website will have a unique <meta name="description">, <title>, and <h1>
+Each page of my website will have a unique <meta name="description">, <title>, and h1
 
 ## Built With
 - HTML
